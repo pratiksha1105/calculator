@@ -1,4 +1,5 @@
 let eq = '';
+let memory_storage = [];
 
 //function that display value
 function dis(val) {
@@ -22,6 +23,9 @@ function initilize() {
   console.log('Initializing');
   document.getElementById('btn_clear').addEventListener('click', clr);
   document.getElementById('btn_solve').addEventListener('click', solve);
+  document.getElementById('btn_add').addEventListener('click', add);
+  document.getElementById('btn_delete').addEventListener('click',delete);
+  document.getElementById()
 
   const opButtons = document.getElementsByClassName('op_button');
   for (let i = 0; i < opButtons.length; i++) {
@@ -33,3 +37,10 @@ function initilize() {
 
 // initilize
 initilize();
+
+//function that add current eq value to memory
+function add(){
+  memory_storage.push(eval(eq));
+  memory_storage.splice(1,1);
+  console.log(memory_storage);
+}
