@@ -24,8 +24,6 @@ function initilize() {
   document.getElementById('btn_clear').addEventListener('click', clr);
   document.getElementById('btn_solve').addEventListener('click', solve);
   document.getElementById('btn_add').addEventListener('click', add);
-  document.getElementById('btn_delete').addEventListener('click',delete);
-  document.getElementById()
 
   const opButtons = document.getElementsByClassName('op_button');
   for (let i = 0; i < opButtons.length; i++) {
