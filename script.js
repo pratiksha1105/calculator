@@ -39,6 +39,10 @@ initilize();
 //function that add current eq value to memory
 function add(){
   memory_storage.push(eval(eq));
-  memory_storage.splice(1,1);
+  if (memory_storage.length > 5) {
+    memory_storage.splice(0, 1)
+  }
+
+
   console.log(memory_storage);
 }
